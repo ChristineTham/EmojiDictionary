@@ -13,6 +13,7 @@
 		87D37C93219EBE600095B503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D37C91219EBE600095B503 /* LaunchScreen.storyboard */; };
 		87D37C9B219EBEEE0095B503 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D37C9A219EBEEE0095B503 /* Emoji.swift */; };
 		87D37C9F219EC0920095B503 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D37C9E219EC0920095B503 /* EmojiTableViewController.swift */; };
+		87D37CA1219ECC5E0095B503 /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D37CA0219ECC5E0095B503 /* EmojiTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		87D37C94219EBE600095B503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D37C9A219EBEEE0095B503 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		87D37C9E219EC0920095B503 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		87D37CA0219ECC5E0095B503 /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				87D37C94219EBE600095B503 /* Info.plist */,
 				87D37C9A219EBEEE0095B503 /* Emoji.swift */,
 				87D37C9E219EC0920095B503 /* EmojiTableViewController.swift */,
+				87D37CA0219ECC5E0095B503 /* EmojiTableViewCell.swift */,
 			);
 			path = EmojiDictionary;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				87D37C9B219EBEEE0095B503 /* Emoji.swift in Sources */,
 				87D37C9F219EC0920095B503 /* EmojiTableViewController.swift in Sources */,
+				87D37CA1219ECC5E0095B503 /* EmojiTableViewCell.swift in Sources */,
 				87D37C89219EBE5C0095B503 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -56,7 +56,7 @@ class EmojiTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,14 +78,18 @@ class EmojiTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
+        //Step 1: Dequeue cell
+        let cell = tableView.dequeueReusableCell(withIdentifier:
+            "EmojiCell", for: indexPath) as! EmojiTableViewCell
+        
+        //Step 2: Fetch model object to display
         let emoji = emojis[indexPath.row]
-
-        // Configure the cell...
-        cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
-        cell.detailTextLabel?.text = emoji.description
+        
+        //Step 3: Configure cell
+        cell.update(with: emoji)
         cell.showsReorderControl = true
-
+        
+        //Step 4: Return cell
         return cell
     }
     
@@ -105,7 +109,7 @@ class EmojiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                                editingStyleForRowAt indexPath: IndexPath) ->
         UITableViewCell.EditingStyle {
-            return .none
+            return .delete
     }
 
     /*
@@ -116,17 +120,17 @@ class EmojiTableViewController: UITableViewController {
     }
     */
 
-    /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            emojis.remove(at: indexPath.row)
+            
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.deleteRows(at: [indexPath], with: . automatic)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
     /*
     // Override to support rearranging the table view.

@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		87D37C89219EBE5C0095B503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D37C88219EBE5C0095B503 /* AppDelegate.swift */; };
-		87D37C8B219EBE5C0095B503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D37C8A219EBE5C0095B503 /* ViewController.swift */; };
 		87D37C8E219EBE5C0095B503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D37C8C219EBE5C0095B503 /* Main.storyboard */; };
 		87D37C90219EBE600095B503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D37C8F219EBE600095B503 /* Assets.xcassets */; };
 		87D37C93219EBE600095B503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D37C91219EBE600095B503 /* LaunchScreen.storyboard */; };
+		87D37C9B219EBEEE0095B503 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D37C9A219EBEEE0095B503 /* Emoji.swift */; };
+		87D37C9F219EC0920095B503 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D37C9E219EC0920095B503 /* EmojiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87D37C85219EBE5C0095B503 /* EmojiDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D37C88219EBE5C0095B503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87D37C8A219EBE5C0095B503 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87D37C8D219EBE5C0095B503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D37C8F219EBE600095B503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D37C92219EBE600095B503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87D37C94219EBE600095B503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D37C9A219EBEEE0095B503 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		87D37C9E219EC0920095B503 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				87D37C88219EBE5C0095B503 /* AppDelegate.swift */,
-				87D37C8A219EBE5C0095B503 /* ViewController.swift */,
 				87D37C8C219EBE5C0095B503 /* Main.storyboard */,
 				87D37C8F219EBE600095B503 /* Assets.xcassets */,
 				87D37C91219EBE600095B503 /* LaunchScreen.storyboard */,
 				87D37C94219EBE600095B503 /* Info.plist */,
+				87D37C9A219EBEEE0095B503 /* Emoji.swift */,
+				87D37C9E219EC0920095B503 /* EmojiTableViewController.swift */,
 			);
 			path = EmojiDictionary;
 			sourceTree = "<group>";
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D37C8B219EBE5C0095B503 /* ViewController.swift in Sources */,
+				87D37C9B219EBEEE0095B503 /* Emoji.swift in Sources */,
+				87D37C9F219EC0920095B503 /* EmojiTableViewController.swift in Sources */,
 				87D37C89219EBE5C0095B503 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hellotham.EmojiDictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hellotham.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +311,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hellotham.EmojiDictionary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hellotham.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
